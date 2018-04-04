@@ -3,8 +3,8 @@ Practical Data Analysis with Python
 ***********************************
 
 :Author: Dr. Andreas Hilboll
-:Email: hilboll@uni-bremen.de
-:Date: Summer term 2018
+:Email:  hilboll@uni-bremen.de
+:Date:   Summer term 2018
 
 This Git repository holds the material for the course `Practical Data
 Analysis with Python
@@ -21,7 +21,7 @@ Time
   Friday, 10:15 - 12:00
 
 Dates
-  20 Oct 2016 - 02 Feb 2017
+  06 Apr 2018 - 06 Jul 2018
 
 Location
   `NW1 / S3032 <http://oracle-web.zfn.uni-bremen.de/lageplan/lageplan?haus=NW1&raum=s3032&pi_anz=0>`__
@@ -41,9 +41,13 @@ explained for all relevant operating systems (Windows, MacOS, Linux).
 **Participants are expected to bring their own laptops, as the course
 contains large parts of practical work.**
 
+
+Syllabus
+========
+
 The first part of the course will touch on the following subjects:
 
-- /But this worked yesterday, before I made some changes .../, or: an
+- *But this worked yesterday, before I made some changes ...*, or: an
   introduction to version control.
 - Getting started: How to setup your own computer for data analysis in Python.
 - Hands-on introduction to the Python scientific ecosystem: Arrays and
@@ -52,7 +56,9 @@ The first part of the course will touch on the following subjects:
 - Reading and writing data in common file formats.
 - Making both beautiful and meaningful plots from data.
 - An overview of the most common special-topic libraries for all research areas
-  covered by the /pep/ program.
+  covered by the pep_ program.
+
+.. _pep: http://www.pep.uni-bremen.de/
 
 In its last sessions, the course will focus on a practical introduction to the
 most common data analysis tasks, like, among others, curve fitting, parameter
@@ -61,15 +67,3 @@ estimation, and correlation analysis.
 Every week, there will be 2 hours of course (approx. 1 hour lecture + 1 hour
 practical exercises). There will be weekly homework excercises, plus two graded
 homework projects.
-
-
-Reading material
-================
-
-During this course, we will make use of free online material.  Each lecture will
-contain large parts of practical exercises, and relevant reading material will
-be announced in each lecture.
-
-The following books are generally a good introduction into using Python for
-scientific computing, but I strongly advise to check out the free online
-material first, before investing into them.
