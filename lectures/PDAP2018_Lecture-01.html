@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Practical Data Analysis with Python</title>
+<meta name="author" content="(Dr. Andreas Hilboll)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/sky.css" id="theme"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Practical Data Analysis with Python</h1><h2 class="author">Dr. Andreas Hilboll</h2><h2 class="date">06 April 2018</h2>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org3fd94d8">Introduction</a></li>
+<li><a href="#/slide-orgfae3921">Course overview</a></li>
+<li><a href="#/slide-org430fc55">Course Logistics</a></li>
+<li><a href="#/slide-org2186188">Reading material</a></li>
+<li><a href="#/slide-orgfde6845">Practical excercise: Setting up your computer</a></li>
+<li><a href="#/slide-org7874cdb">Homework for next week</a></li>
+<li><a href="#/slide-org0cf4a9c">Final remarks</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-org3fd94d8">
+<h2 id="org3fd94d8">Introduction</h2>
+</section>
+</section>
+<section>
+<section id="slide-org1005a7e">
+<h3 id="org1005a7e">Who am I?</h3>
+<ul>
+<li>Andreas Hilboll</li>
+<li>working at IUP (<a href="http://www.iup.uni-bremen.de/">Institute of Environmental Physics</a>)</li>
+<li>past: PhD in atmospheric remote sensing</li>
+<li>now: PostDoc in atmospheric modeling / <a href="http://www.iup.uni-bremen.de/lamos/">LAMOS group</a>, Prof. Vrekoussis</li>
+<li><p>
+when you need to contact me:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">E-mail</td>
+<td class="org-left"><a href="mailto:hilboll@uni-bremen.de">hilboll@uni-bremen.de</a></td>
+</tr>
+
+<tr>
+<td class="org-left">Room</td>
+<td class="org-left"><a href="http://oracle-web.zfn.uni-bremen.de/lageplan/lageplan?pi_raum_id=8251&amp;pi_raumnummer=S3121&amp;pi_anz=1">S3132</a> (formerly S3121)</td>
+</tr>
+
+<tr>
+<td class="org-left">Phone</td>
+<td class="org-left">+49(0)421-218-62133</td>
+</tr>
+</tbody>
+</table></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfb572ee">
+<h3 id="orgfb572ee">Who are you?</h3>
+<ul>
+<li>Please fill in the participant list.</li>
+<li>Is there anything in particular you want to learn here?</li>
+<li>What is your previous experience with Python?</li>
+<li>What is your previous experience with version control?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfae3921">
+<h2 id="orgfae3921">Course overview</h2>
+</section>
+</section>
+<section>
+<section id="slide-org3139d0a">
+<h3 id="org3139d0a">Introduction</h3>
+<p>
+This course is a <i>practical</i> introduction to using Python for data
+analysis.  This means that
+</p>
+<ul>
+<li>we start by setting up your computer for use with Python <i>(today)</i></li>
+<li>we will learn about automatic version control with Git: What is
+it, why should we use it, and how do we do it? <i>(next week)</i></li>
+<li>we will learn the basics about Python in science <i>(April-early
+May)</i>:
+<ul>
+<li>the basics about arrays</li>
+<li>reading and writing data in common file formats</li>
+<li>labeled arrays, or how to intuitively work with data</li>
+<li>making beautiful and meaningful plots from data</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfa14baf">
+<h3 id="orgfa14baf">Practical</h3>
+<p>
+Starting in <i>mid-May</i>, we will take an in-depth look at common data
+analysis problems like
+</p>
+
+<ul>
+<li>curve fitting</li>
+<li>minimization of a cost function</li>
+<li>parameter estimation</li>
+<li>correlation analysis</li>
+
+</ul>
+
+<p>
+Also, we can look into special topic libraries which <i>you</i> will want
+to work with (let me know which topics interest you!)
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org6f790e2">
+<h3 id="org6f790e2">This course is <i>for you</i></h3>
+<p>
+The goal of this course is to <b>help you learn Python</b>.  I expect you
+to work independently with the available online material.
+</p>
+
+<p>
+This course is meant to be <i>practical</i> to <i>you</i>.  So you are welcome to let me
+know what you would like to learn!
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org430fc55">
+<h2 id="org430fc55">Course Logistics</h2>
+</section>
+</section>
+<section>
+<section id="slide-org1498e26">
+<h3 id="org1498e26">Communication</h3>
+<ul>
+<li>I will use <a href="https://elearning.uni-bremen.de/">Stud.IP</a> to make announcements etc.  So make sure that you register
+for this course</li>
+<li>If you need to contact me, drop me an <a href="mailto:hilboll@uni-bremen.de">e-mail</a> or come by my office S3132</li>
+<li>All course material will be uploaded to the Git repository at
+<a href="https://github.com/iup-bremen/pdap-2018">https://github.com/iup-bremen/pdap-2018</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgea291db">
+<h3 id="orgea291db">Consultation meetings</h3>
+<p>
+I will offer 15-minute consultation sessions <i>on Tuesdays</i> either for
+individuals or for groups of students.  I will try to offer at
+least two sessions to each student over the course of the semester.
+</p>
+
+<p>
+The first time slots will be next week Tuesday; feel free to
+<a href="https://doodle.com/poll/wi8f8d93azrsy9cr">register</a> (first come, first serve).
+</p>
+
+<p>
+During the consultation, time is limited, so <b>please be prepared</b>!
+The better you know before we meet <i>what your question actually is</i>,
+the better I will be able to help you!
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org9e8b09d">
+<h3 id="org9e8b09d">Homework</h3>
+<p>
+Sometimes, there will be optional homework assignments.  These can
+either be some practice work, or it could be some preparatory steps
+you have to do on your computer.  In the latter case, having
+completed these steps is required to follow the next class.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org5bc5210">
+<h3 id="org5bc5210">Exam / grades</h3>
+<p>
+There will be four graded homework projects, one every 3&#x2013;4 weeks:
+</p>
+<ul>
+<li>3 weeks time to complete</li>
+<li>to be completed in groups of 1&#x2013;3 students</li>
+<li>course grade will be arithmetic average of the four homework assignments</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org2186188">
+<h2 id="org2186188">Reading material</h2>
+<p>
+Reading material is available in the file <code>REFERENCES.rst</code> in the
+course repository.  This file will be continuously updated as the
+semester goes on.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfde6845">
+<h2 id="orgfde6845">Practical excercise: Setting up your computer</h2>
+<p>
+Install instructions to set up Python on your computer are provided
+in the file <a href="https://github.com/iup-bremen/pdap-2018/blob/master/INSTALL.rst">INSTALL.rst</a> in the course repository.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org7874cdb">
+<h2 id="org7874cdb">Homework for next week</h2>
+<div class="outline-text-2" id="text-org7874cdb">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgd49dd45">
+<h3 id="orgd49dd45">Install Git</h3>
+<p>
+Install the Git version control system on your computer, following
+<a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org6bb47cf">
+<h3 id="org6bb47cf">Create a GitHub account</h3>
+<p>
+All course material will be available in a Git repository.  For In
+order to work with the exercise sheets, you will need an account at
+<a href="https://github.com">GitHub</a>:
+</p>
+
+<ol>
+<li>Go to <a href="https://github.com">https://github.com</a></li>
+<li>Click on <i>Sign Up</i></li>
+<li>Choose a <i>username</i> and enter your <i>email address</i> and a <i>password</i>.</li>
+<li>Click on <i>Create an account</i></li>
+<li>Write your username on the participant list</li>
+
+</ol>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orga42d9ab">
+<h3 id="orga42d9ab">Create SSH key pair</h3>
+<ul>
+<li>Authentication in the Git world depends on SSH keys</li>
+<li>Create an SSH key pair, following the instructions at
+<a href="https://help.github.com/articles/connecting-to-github-with-ssh/">https://help.github.com/articles/connecting-to-github-with-ssh/</a>
+<ul>
+<li><b>Ignore</b> the step <i>Adding your SSH key to the ssh-agent</i></li>
+
+</ul></li>
+<li>Add the SSH key to your GitHub account</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org0cf4a9c">
+<h2 id="org0cf4a9c">Final remarks</h2>
+<ul>
+<li>If you haven't managed to install Python, I encourage you to try a
+little longer.  If you still need assistance, feel free to
+<a href="https://doodle.com/poll/wi8f8d93azrsy9cr">schedule a consultation session</a>.</li>
+<li>The slides for this course are available in Stud.IP.</li>
+
+</ul>
+
+<p>
+<b>Thank you</b>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c/t',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1024,
+height: 768,
+margin: 0.20,
+minScale: 0.30,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }]
+});
+</script>
+</body>
+</html>
