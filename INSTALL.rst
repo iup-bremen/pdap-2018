@@ -102,6 +102,7 @@ Navigator website to perform the following tasks:
    * basemap
    * cartopy
    * shapely
+   * ffmpeg
 4. Update the package ``pyzmq``
 5. Launch the ``jupyterlab`` app in that environment.
 
