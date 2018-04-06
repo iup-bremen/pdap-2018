@@ -128,34 +128,16 @@
   Install instructions to set up Python on your computer are provided
   in the file [[https://github.com/iup-bremen/pdap-2018/blob/master/INSTALL.rst][INSTALL.rst]] in the course repository.
 
-* Homework for next week
+* TODO Practical exercise: Familiarize yourself with the Notebook
 
-** Install Git
-   
-   Install the Git version control system on your computer, following
-   https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+  Now that Jupterlab is running on your computer, start familiarizing
+  yourself with it.  As a starting point, you might want to read
+  through
+  https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html
+  and work through the exercises in
+  https://swcarpentry.github.io/python-novice-gapminder/01-run-quit/
 
-** Create a GitHub account
-
-   All course material will be available in a Git repository.  For In
-   order to work with the exercise sheets, you will need an account at
-   [[https://github.com][GitHub]]:
-   
-   1. Go to https://github.com
-   2. Click on /Sign Up/
-   3. Choose a /username/ and enter your /email address/ and a /password/.
-   4. Click on /Create an account/
-   5. Write your username on the participant list
-
-
-** Create SSH key pair
-
-   - Authentication in the Git world depends on SSH keys
-   - Create an SSH key pair, following the instructions at
-     https://help.github.com/articles/connecting-to-github-with-ssh/
-     - *Ignore* the step /Adding your SSH key to the ssh-agent/
-   - Add the SSH key to your GitHub account
-
+  
 * DONE Final remarks
   CLOSED: [2018-04-05 Thu 16:08]
 

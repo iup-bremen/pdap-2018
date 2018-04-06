@@ -1,0 +1,52 @@
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1024 reveal_height:768
+#+OPTIONS: reveal_slide_number:c/t
+#+OPTIONS: toc:nil todo:nil timestamp:nil num:t
+#+REVEAL_MARGIN: 0.2
+#+REVEAL_MIN_SCALE: 0.3
+#+REVEAL_TRANS: none
+#+REVEAL_THEME: sky
+#+REVEAL_HLEVEL: 999
+#+REVEAL_PLUGINS: (highlight)
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/
+
+#+TITLE: Practical Data Analysis with Python
+#+SUBTITLE: Homework assignment 01
+#+AUTHOR: Dr. Andreas Hilboll
+#+EMAIL: hilboll@uni-bremen.de
+#+DATE: 06 April 2018
+
+* Using Git
+
+  In session 02, we will learn how to use the Git version control
+  system.  As a preparation, please complete the following steps:
+
+** Git basics 
+
+   Read the chapters [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][About Version Control]] and [[https://git-scm.com/book/en/v2/Getting-Started-Git-Basics][Git Basics]] from the
+   [[https://git-scm.com/book/en/v2][Pro Git book]].
+
+** Install Git
+  
+   Install the Git version control system on your computer, following
+   https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+** Create a GitHub account
+
+   All course material will be available in a Git repository.  For In
+   order to work with the exercise sheets, you will need an account at
+   [[https://github.com][GitHub]]:
+  
+   1. Go to https://github.com
+   2. Click on /Sign Up/
+   3. Choose a /username/ and enter your /email address/ and a /password/.
+   4. Click on /Create an account/
+
+** Create SSH key pair
+
+    - Authentication in the Git world depends on SSH keys
+    - Create an SSH key pair, following the instructions at
+      https://help.github.com/articles/connecting-to-github-with-ssh/
+      - *Ignore* the step /Adding your SSH key to the ssh-agent/
+    - Add the SSH key to your GitHub account
