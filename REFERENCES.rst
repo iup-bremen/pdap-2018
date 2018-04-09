@@ -28,12 +28,23 @@ notably
 Python
 ======
 
-Python in general
------------------
+The Python working environment
+------------------------------
 
-- `The Hitchhiker’s Guide to Python
-   <http://docs.python-guide.org/en/latest/>`__ is a great, free,
-   general book about using Python.
+- `Managing conda environments
+  <https://conda.io/docs/user-guide/tasks/manage-environments.html>`__
+- When disk space is an issue, you can use the `conda clean
+  <https://conda.io/docs/commands/conda-clean.html>`__ command to free
+  up used space.  ``conda clean -t -p`` should remove all downloaded
+  intermediate files from your conda installation without actually
+  removing any installed packages (it will only remove temporary
+  installation files).
+
+
+The Python language in general
+------------------------------
+
+- `The Hitchhiker’s Guide to Python <http://docs.python-guide.org/en/latest/>`__ is a great, free, general book about using Python.
 
 
 Python in science
@@ -51,11 +62,10 @@ Books
 Lectures
 ~~~~~~~~
 
--  Two good general resources about Python in science are
-   - `Python Scientific Lecture Notes
-      <https://scipy-lectures.github.io/index.html>`__
-   - `J. R. Johansson's Lectures on Scientific Computing with Python
-      <http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/tree/master>`__
+Two good general resources about Python in science are:
+
+- `Python Scientific Lecture Notes <https://scipy-lectures.github.io/index.html>`__
+- `J. R. Johansson's Lectures on Scientific Computing with Python <http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/tree/master>`__
 
 
 Cookbooks / Example galleries
