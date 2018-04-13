@@ -65,7 +65,7 @@ Next, we need to install some additional libraries:
 
 .. code:: shell
 
-   conda install netcdf4 xarray basemap cartopy shapely
+   conda install netcdf4 xarray basemap cartopy shapely ffmpeg
 
 Now, we need to update one package:
 
