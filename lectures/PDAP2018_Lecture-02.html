@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Practical Data Analysis with Python</title>
+<meta name="author" content="(Dr. Andreas Hilboll)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/sky.css" id="theme"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Practical Data Analysis with Python</h1><h2 class="author">Dr. Andreas Hilboll</h2><h2 class="date">13 April 2018</h2>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org0a48696">Disclaimer</a></li>
+<li><a href="#/slide-orge41d944">Introduction to Version Control: Git</a></li>
+<li><a href="#/slide-orgc603857">Learning the basics of Git</a></li>
+<li><a href="#/slide-orga0c6e45">Homework</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section>
+<section id="slide-org0a48696">
+<h2 id="org0a48696">Disclaimer</h2>
+<p>
+Parts of the material presented in these slides is
+</p>
+
+<p>
+Copyright © Software Carpentry
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orge41d944">
+<h2 id="orge41d944">Introduction to Version Control: Git</h2>
+<div class="outline-text-2" id="text-orge41d944">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orga824de1">
+<h3 id="orga824de1">What is Version Control (1)</h3>
+<ul>
+<li>Nothing that is committed to version control is ever lost (unless you work
+really, really hard at it).</li>
+<li>All old versions of files are saved &#x2026;</li>
+<li>&#x2026; so it’s always possible to go back in time to see exactly
+<ul>
+<li>who wrote what on a particular day, or</li>
+<li>what version of a program was used to generate a particular set of results.</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgefddf0f">
+<h3 id="orgefddf0f">What is Version Control (2)</h3>
+<ul>
+<li>Since we have this record of who made what changes when, we
+<ul>
+<li>know whom to ask if we have questions later on</li>
+<li>can revert to a previous version, much like the “undo” feature in an editor.</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org549e556">
+<h3 id="org549e556">What is Version Control (3)</h3>
+<ul>
+<li>When several people collaborate in the same project, it’s possible to
+accidentally overlook or overwrite someone’s changes.</li>
+<li>The version control system automatically notifies users whenever there’s a
+conflict between one person’s work and another’s.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org7b47ef5">
+<h3 id="org7b47ef5">What is Version Control (4)</h3>
+<ul>
+<li>Teams are not the only ones to benefit from version control: lone students can
+benefit immensely.</li>
+<li>Keeping a record of what was changed, when, and why is extremely useful for
+all researchers if they ever need to come back to the project later on (e.g.,
+a year later, when memory has faded).</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgf1a36c6">
+<h3 id="orgf1a36c6">What can version control do for you?</h3>
+<p>
+You all know this situation:
+</p>
+</section>
+<section >
+
+<div class="figure">
+<p><img src="./img/s02_phd_1.png" alt="s02_phd_1.png" />
+</p>
+</div>
+</section>
+<section >
+
+<div class="figure">
+<p><img src="./img/s02_phd_2.png" alt="s02_phd_2.png" />
+</p>
+</div>
+</section>
+<section >
+
+<div class="figure">
+<p><img src="./img/s02_phd_3.png" alt="s02_phd_3.png" />
+</p>
+</div>
+
+</section>
+<section >
+
+<p>
+We’ve all been in this situation before:
+</p>
+
+<ul>
+<li>it seems ridiculous to have multiple nearly-identical versions of the same document</li>
+<li>some word processors let us deal with this a little better, such as Microsoft
+Word’s “Track Changes” or Google Docs’ version history.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd07aa27">
+<h3 id="orgd07aa27">Discussion (1)</h3>
+<ul>
+<li>Imagine you drafted an excellent paragraph for a paper you are writing, but
+later ruin it. How would you retrieve the excellent version of your
+conclusion? Is it even possible?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org3588606">
+<h3 id="org3588606">Discussion (2)</h3>
+<ul>
+<li>Imagine you have 5 co-authors. How would you manage the changes and comments
+they make to your paper? If you use LibreOffice Writer or Microsoft Word, what
+happens if you accept changes made using the Track Changes option? Do you have
+a history of those changes?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb269f8d">
+<h3 id="orgb269f8d">Key Points</h3>
+<ul>
+<li>Version control is like an unlimited ‘undo’.</li>
+<li>Version control also allows many people to work in parallel.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1167c5e">
+<h3 id="org1167c5e">Version control can make things easier</h3>
+<ul>
+<li>start with a base version of the document</li>
+<li>save just the changes you made at each step of the way</li>
+<li>think of it as a tape: if you rewind the tape and start at the base document,
+then you can play back each change and end up with your latest version.</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="./img/s02_play-changes.png" alt="s02_play-changes.png" />
+</p>
+</div>
+
+</section>
+<section >
+
+<ul>
+<li>think of changes as separate from the document itself</li>
+<li>“play back” different sets of changes onto the base document to getting
+different versions of the document</li>
+<li>e.g., two users can make independent sets of changes based on the same
+document.</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="./img/s02_versions.png" alt="s02_versions.png" />
+</p>
+</div>
+
+</section>
+<section >
+
+<ul>
+<li>if there aren’t conflicts, you can even play two sets of changes onto the same
+base document.</li>
+<li>the result will be the base document with the two changes applied</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="./img/s02_merge.png" alt="s02_merge.png" />
+</p>
+</div>
+
+</section>
+<section >
+
+<ul>
+<li>version control is a tool keeping track of these changes for us and helps us version and merge our files</li>
+<li>It allows you to decide which changes make up the next document version, called a commit, and keep useful metadata about them.</li>
+<li>e.g., think of your thesis before giving it to a friend for proof-reading - you will always know exactly which version your friend commented on</li>
+
+</ul>
+
+</section>
+<section >
+
+<ul>
+<li>The complete history of commits for a particular project and their metadata
+make up a repository.</li>
+<li>Repositories can be kept in sync across different computers facilitating
+collaboration among different people.</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgc603857">
+<h2 id="orgc603857">Learning the basics of Git</h2>
+<p>
+Today, we will follow (some parts of) a free lecture created by the <a href="http://software-carpentry.org/lessons/">Software
+Carpentry</a> <a href="https://swcarpentry.github.io/git-novice/">project</a>:
+</p>
+
+<ol>
+<li><a href="https://swcarpentry.github.io/git-novice/02-setup/">Setting Up Git</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/03-create/">Creating a Repository</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/04-changes/">Tracking Changes</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/05-history/">Exploring History</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/06-ignore/">Ignoring Things</a></li>
+
+</ol>
+
+<p>
+(Link: <a href="http://unihb.eu/EdTpaRb2">http://unihb.eu/EdTpaRb2</a>)
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orga0c6e45">
+<h2 id="orga0c6e45">Homework</h2>
+<p>
+Complete the following episodes from the Software Carpentry lecture material:
+</p>
+
+<ul>
+<li><a href="https://swcarpentry.github.io/git-novice/07-github/">Remotes</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/08-collab/">Collaborating</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/09-conflict/">Conflicts</a></li>
+
+</ul>
+
+<p>
+Use the <a href="https://gitlab.com/">GitLab</a> account you created during our first session (instead of GitHub,
+as described in the lecture material).  For a description of the key differences
+between GitHub and GitLab, see <a href="https://about.gitlab.com/2016/01/27/comparing-terms-gitlab-github-bitbucket/">this link</a>.
+</p>
+
+<p>
+Then, give me access to the repository you created (my GitLab user name is
+<code>andreas-h</code>).
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c/t',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1024,
+height: 768,
+margin: 0.20,
+minScale: 0.30,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }]
+});
+</script>
+</body>
+</html>
