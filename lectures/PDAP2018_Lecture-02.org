@@ -141,10 +141,5 @@ Complete the following episodes from the Software Carpentry lecture material:
 - [[https://swcarpentry.github.io/git-novice/08-collab/][Collaborating]]
 - [[https://swcarpentry.github.io/git-novice/09-conflict/][Conflicts]]
 
-Use the [[https://gitlab.com/][GitLab]] account you created during our first session (instead of GitHub,
-as described in the lecture material).  For a description of the key differences
-between GitHub and GitLab, see [[https://about.gitlab.com/2016/01/27/comparing-terms-gitlab-github-bitbucket/][this link]].
-
-Then, give me access to the repository you created (my GitLab user name is
-=andreas-h=).
+Use the [[https://github.com/][GitHub]] account you created during your homework preparations.
 

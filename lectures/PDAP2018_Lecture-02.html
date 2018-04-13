@@ -33,10 +33,10 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-org0a48696">Disclaimer</a></li>
-<li><a href="#/slide-orge41d944">Introduction to Version Control: Git</a></li>
-<li><a href="#/slide-orgc603857">Learning the basics of Git</a></li>
-<li><a href="#/slide-orga0c6e45">Homework</a></li>
+<li><a href="#/slide-org2d6c6a4">Disclaimer</a></li>
+<li><a href="#/slide-orgbef1529">Introduction to Version Control: Git</a></li>
+<li><a href="#/slide-org7696fb0">Learning the basics of Git</a></li>
+<li><a href="#/slide-orgd91d3aa">Homework</a></li>
 </ul>
 </div>
 </div>
@@ -44,8 +44,8 @@
 
 
 <section>
-<section id="slide-org0a48696">
-<h2 id="org0a48696">Disclaimer</h2>
+<section id="slide-org2d6c6a4">
+<h2 id="org2d6c6a4">Disclaimer</h2>
 <p>
 Parts of the material presented in these slides is
 </p>
@@ -57,15 +57,15 @@ Copyright © Software Carpentry
 </section>
 </section>
 <section>
-<section id="slide-orge41d944">
-<h2 id="orge41d944">Introduction to Version Control: Git</h2>
-<div class="outline-text-2" id="text-orge41d944">
+<section id="slide-orgbef1529">
+<h2 id="orgbef1529">Introduction to Version Control: Git</h2>
+<div class="outline-text-2" id="text-orgbef1529">
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orga824de1">
-<h3 id="orga824de1">What is Version Control (1)</h3>
+<section id="slide-org16815a6">
+<h3 id="org16815a6">What is Version Control (1)</h3>
 <ul>
 <li>Nothing that is committed to version control is ever lost (unless you work
 really, really hard at it).</li>
@@ -81,8 +81,8 @@ really, really hard at it).</li>
 </section>
 </section>
 <section>
-<section id="slide-orgefddf0f">
-<h3 id="orgefddf0f">What is Version Control (2)</h3>
+<section id="slide-org646a063">
+<h3 id="org646a063">What is Version Control (2)</h3>
 <ul>
 <li>Since we have this record of who made what changes when, we
 <ul>
@@ -95,8 +95,8 @@ really, really hard at it).</li>
 </section>
 </section>
 <section>
-<section id="slide-org549e556">
-<h3 id="org549e556">What is Version Control (3)</h3>
+<section id="slide-orgc3c3ea0">
+<h3 id="orgc3c3ea0">What is Version Control (3)</h3>
 <ul>
 <li>When several people collaborate in the same project, it’s possible to
 accidentally overlook or overwrite someone’s changes.</li>
@@ -107,8 +107,8 @@ conflict between one person’s work and another’s.</li>
 </section>
 </section>
 <section>
-<section id="slide-org7b47ef5">
-<h3 id="org7b47ef5">What is Version Control (4)</h3>
+<section id="slide-org63fc022">
+<h3 id="org63fc022">What is Version Control (4)</h3>
 <ul>
 <li>Teams are not the only ones to benefit from version control: lone students can
 benefit immensely.</li>
@@ -122,8 +122,8 @@ a year later, when memory has faded).</li>
 </section>
 </section>
 <section>
-<section id="slide-orgf1a36c6">
-<h3 id="orgf1a36c6">What can version control do for you?</h3>
+<section id="slide-org229a598">
+<h3 id="org229a598">What can version control do for you?</h3>
 <p>
 You all know this situation:
 </p>
@@ -166,8 +166,8 @@ Word’s “Track Changes” or Google Docs’ version history.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgd07aa27">
-<h3 id="orgd07aa27">Discussion (1)</h3>
+<section id="slide-org27dacc7">
+<h3 id="org27dacc7">Discussion (1)</h3>
 <ul>
 <li>Imagine you drafted an excellent paragraph for a paper you are writing, but
 later ruin it. How would you retrieve the excellent version of your
@@ -178,8 +178,8 @@ conclusion? Is it even possible?</li>
 </section>
 </section>
 <section>
-<section id="slide-org3588606">
-<h3 id="org3588606">Discussion (2)</h3>
+<section id="slide-org56c41f1">
+<h3 id="org56c41f1">Discussion (2)</h3>
 <ul>
 <li>Imagine you have 5 co-authors. How would you manage the changes and comments
 they make to your paper? If you use LibreOffice Writer or Microsoft Word, what
@@ -191,8 +191,8 @@ a history of those changes?</li>
 </section>
 </section>
 <section>
-<section id="slide-orgb269f8d">
-<h3 id="orgb269f8d">Key Points</h3>
+<section id="slide-org3aa9e8b">
+<h3 id="org3aa9e8b">Key Points</h3>
 <ul>
 <li>Version control is like an unlimited ‘undo’.</li>
 <li>Version control also allows many people to work in parallel.</li>
@@ -202,8 +202,8 @@ a history of those changes?</li>
 </section>
 </section>
 <section>
-<section id="slide-org1167c5e">
-<h3 id="org1167c5e">Version control can make things easier</h3>
+<section id="slide-org78df9ee">
+<h3 id="org78df9ee">Version control can make things easier</h3>
 <ul>
 <li>start with a base version of the document</li>
 <li>save just the changes you made at each step of the way</li>
@@ -277,8 +277,8 @@ collaboration among different people.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgc603857">
-<h2 id="orgc603857">Learning the basics of Git</h2>
+<section id="slide-org7696fb0">
+<h2 id="org7696fb0">Learning the basics of Git</h2>
 <p>
 Today, we will follow (some parts of) a free lecture created by the <a href="http://software-carpentry.org/lessons/">Software
 Carpentry</a> <a href="https://swcarpentry.github.io/git-novice/">project</a>:
@@ -300,8 +300,8 @@ Carpentry</a> <a href="https://swcarpentry.github.io/git-novice/">project</a>:
 </section>
 </section>
 <section>
-<section id="slide-orga0c6e45">
-<h2 id="orga0c6e45">Homework</h2>
+<section id="slide-orgd91d3aa">
+<h2 id="orgd91d3aa">Homework</h2>
 <p>
 Complete the following episodes from the Software Carpentry lecture material:
 </p>
@@ -314,14 +314,7 @@ Complete the following episodes from the Software Carpentry lecture material:
 </ul>
 
 <p>
-Use the <a href="https://gitlab.com/">GitLab</a> account you created during our first session (instead of GitHub,
-as described in the lecture material).  For a description of the key differences
-between GitHub and GitLab, see <a href="https://about.gitlab.com/2016/01/27/comparing-terms-gitlab-github-bitbucket/">this link</a>.
-</p>
-
-<p>
-Then, give me access to the repository you created (my GitLab user name is
-<code>andreas-h</code>).
+Use the <a href="https://github.com/">GitHub</a> account you created during your homework preparations.
 </p>
 </section>
 </section>
