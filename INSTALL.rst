@@ -96,6 +96,7 @@ Navigator website to perform the following tasks:
 2. Add the ``conda-forge`` channel *to the bottom* of your channel
    list.
 3. Install the following packages into the ``pdap2018`` environment:
+
    * anaconda
    * netcdf4
    * xarray
@@ -103,6 +104,7 @@ Navigator website to perform the following tasks:
    * cartopy
    * shapely
    * ffmpeg
+
 4. Update the package ``pyzmq``
 5. Launch the ``jupyterlab`` app in that environment.
 
