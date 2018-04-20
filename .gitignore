@@ -1,4 +1,18 @@
+# Jupyter notebook autosave
 .ipynb_checkpoints
+
+# course administration
 /admin
+
+# TeX-related
 *.synctex.gz
 *.tex
+
+# emacs temporary files
+.\#*
+*\#*\#
+
+# vim temporary files
+*~
+.*.swp
+.*.swo
