@@ -1,0 +1,82 @@
+#+OPTIONS: toc:nil todo:nil timestamp:nil num:t
+#+LATEX_HEADER: \usepackage{wasysym}
+#+LATEX_HEADER: \setlength{\parindent}{0em}
+#+LATEX_HEADER: \setlength{\parskip}{0.5em}
+
+#+TITLE: Practical Data Analysis with Python
+#+SUBTITLE: Summer 2018 --- Homework assignment 02
+#+AUTHOR: Dr. Andreas Hilboll
+#+EMAIL: hilboll@uni-bremen.de
+#+DATE: 20 April 2018
+
+  This homework exercise gives you the opportunity to familiarize
+  yourself with the Git process of collaborating with other people.
+  While this homework assignment is optional, I still strongly
+  encourage you to participate, since later on, we will use this exact
+  same process to obtain and submit your exam homework projects.  So
+  this assignment gives you a free learning opportunity to prepare for
+  the upcoming graded homework projects.
+
+* Prerequisites
+
+  This homework exercise assumes that you successfully completed the
+  first homework exercise; most notably, you will need a working [[https://git-scm.com/][Git]]
+  setup and your [[https://github.com][Github]] account.
+
+  
+* The Git workflow
+
+  The basic Git workflow is described in the chapter [[https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project][GitHub -
+  Contributing to a Project]] of the [[https://git-scm.com/book/en/v2][Pro Git book]].
+  
+  On that page, all the steps on the GitHub website and all the Git
+  commands you need are described.  In our case, you need to
+
+  1. Login to the GitHub website
+  2. Go to the course repository https://github.com/iup-bremen/pdap-2018
+  3. Create a /Fork/ of the repository
+  4. Clone your fork of the project to your computer:
+     #+BEGIN_SRC shell
+       git clone git@github.com:YOURGITHUBUSERNAME/pdap-2018.git
+     #+END_SRC
+  5. Create a branch for this homework assignment:
+     #+BEGIN_SRC shell
+       git checkout -b homework2_YOURLASTNAME
+     #+END_SRC
+     One word of caution (this only applies to the PDAP-2018 course
+     repository): Make sure to not modify the /master/ branch; always
+     checkout a new branch before modifying any files in the
+     repository. Especially, *never* commit anything to the /master/
+     branch of this repository, as this will complicate future updates
+     to the course repository.
+  6. Complete the exercises in the homework notebook (see [[*Basic Python in the Notebook][below]])
+  7. Commit the changes you made to the notebook file:
+     #+BEGIN_SRC shell
+       git add homework/PDAP2018_Homework-02_YOURLASTNAME.ipynb
+       git commit [...]
+     #+END_SRC
+  8. Push your homework branch to GitHub:
+     #+BEGIN_SRC shell
+       git push origin homework2_YOURLASTNAME
+     #+END_SRC
+  9. On the GitHub website, you will see that GitHub 'noticed' that
+     you pushed the branch; you can now press the green /Compare & pull
+     request/ button
+     
+  Et voilà -- you submitted your homework \smiley{}
+  
+
+* Basic Python in the Notebook
+
+  In the course repository, you will a file
+  =homework/PDAP2018_Homework-02_template.ipynb=.  This is the Jupyter
+  notebook file that contains your homework assignment.  Make a copy
+  of that file, called =PDAP2018_Homework-02_YOURLASTNAME.ipynb=, and
+  also place it in the directory =homework/= in the repository.
+  
+  Now, open this new file in JupyterLab (or the classic Jupyter
+  Notebook, whatever you prefer) and follow the instructions given in
+  that file.
+  
+  While working on the Notebook, don't forget to /save/ the file
+  regularly.
