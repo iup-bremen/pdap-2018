@@ -45,6 +45,7 @@ The Python language in general
 ------------------------------
 
 - `The Hitchhiker’s Guide to Python <http://docs.python-guide.org/en/latest/>`__ is a great, free, general book about using Python.
+- `A Whirlwind Tour of Python <https://nbviewer.jupyter.org/github/jakevdp/WhirlwindTourOfPython/blob/master/Index.ipynb>`__ is a notebook-based introduction into Python basics, highly recommended.
 
 
 Python in science
